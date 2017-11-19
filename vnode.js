@@ -1,5 +1,3 @@
-"use strict"
-
 function Vnode(tag, key, attrs, children, text, dom) {
 	return {tag: tag, key: key, attrs: attrs, children: children, text: text, dom: dom, domSize: undefined, state: undefined, events: undefined, instance: undefined, skip: false}
 }
@@ -15,4 +13,4 @@ Vnode.normalizeChildren = function normalizeChildren(children) {
 	return children
 }
 
-module.exports = Vnode
+export default Vnode
